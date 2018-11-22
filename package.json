@@ -1,0 +1,153 @@
+{
+  "name": "count_up_vuex",
+  "version": "1.0.0",
+  "description": "just count up using vuex",
+  "main": "index.js",
+  "repository": "git@github.com:junichi-h/count_up_vuex.git",
+  "author": "Junichi Honda <junichi.hnd@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "plugins": [
+      "vue"
+    ],
+    "extends": [
+      "plugin:vue/recommended",
+      "eslint-config-prettier",
+      "eslint-config-prettier/vue"
+    ],
+    "rules": {
+      "arrow-body-style": "off",
+      "arrow-parens": [
+        "off"
+      ],
+      "class-methods-use-this": "off",
+      "compat/compat": "error",
+      "consistent-return": "off",
+      "comma-dangle": [
+        2,
+        "never"
+      ],
+      "default-case": "off",
+      "generator-star-spacing": "off",
+      "import/no-unresolved": "error",
+      "import/no-extraneous-dependencies": "off",
+      "import/no-named-as-default": "off",
+      "import/prefer-default-export": "off",
+      "new-cap": "off",
+      "no-console": "off",
+      "no-plusplus": "off",
+      "no-use-before-define": "off",
+      "no-multi-assign": "off",
+      "no-param-reassign": "off",
+      "no-unused-expressions": "off",
+      "no-useless-computed-key": "off",
+      "promise/param-names": "error",
+      "promise/always-return": "error",
+      "promise/catch-or-return": "error",
+      "promise/no-native": "off",
+      "no-underscore-dangle": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "start": "concurrently --kill-others --raw \"yarn run dev\"",
+    "dev": "cross-env NODE_ENV=development nodemon --require @babel/register server.js --watch server.js --port 9000"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-jsx": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.1.5",
+    "autoprefixer": "^9.3.1",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-dynamic-import-node": "^2.2.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "browser-sync": "^2.26.3",
+    "chalk": "^2.4.1",
+    "concurrently": "^4.1.0",
+    "connect-history-api-fallback": "^1.5.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.1",
+    "csswring": "^7.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8",
+    "husky": "^1.2.0",
+    "jest": "^23.6.0",
+    "jest-puppeteer": "^3.5.1",
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.18.6",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-easings": "^2.0.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-reporter": "^6.0.0",
+    "prettier": "^1.15.2",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "puppeteer": "^1.10.0",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.8.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "vue-hot-reload-api": "^2.3.1",
+    "vue-jest": "^3.0.0",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.26.0",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.11",
+    "ress": "^1.2.2",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  }
+}
