@@ -6,10 +6,9 @@
 </template>
 
 <script>
-  import Counter from './components/organisms/counter'
+  import Counter from './components/organisms/counter';
 
   export default {
-
     name: 'app',
     components: {
       Counter

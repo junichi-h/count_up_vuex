@@ -4,6 +4,7 @@
             text-filed(:count='count')
         .buttonContainer
             Button(label='increment' :onClickFunc='onIncrement')
+            Button(label='down' :onClickFunc='onDecrement')
             Button(label='reset' :onClickFunc='onReset')
 </template>
 
@@ -15,6 +16,7 @@
     props: {
       count: Number,
       onIncrement: Function,
+      onDecrement: Function,
       onReset: Function
     },
     components: {
